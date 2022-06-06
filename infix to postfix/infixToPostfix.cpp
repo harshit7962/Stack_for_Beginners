@@ -1,4 +1,4 @@
-//To check if precedence of two operators
+//To check for precedence of two operators
 bool higherprec(char c1, char c2) {
     if(c2=='(') return true;
     else if(c1=='^') return true;
@@ -8,6 +8,7 @@ bool higherprec(char c1, char c2) {
     return false;
 }
 
+//head function...
 string infixToPostfix(string s) {
     stack<char> st;
     
